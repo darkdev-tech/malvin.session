@@ -60,22 +60,22 @@ router.get('/', async (req, res) => {
 	
 				   let MALVIN_KING_TEXT = `
 ┏━━━━━━━━━━━━━━
-┃ᴍᴀʟᴠɪɴ-ᴍᴅ SESSION IS 
+┃BOT SESSION IS 
 ┃SUCCESSFULLY
 ┃CONNECTED ✅🔥
 ┗━━━━━━━━━━━━━━━
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❶ || Creator = 𖥘⚡ ᴍᴀʟᴠɪɴ-ᴋɪɴɢ ⚡𖥘
+❶ || Creator = 𖥘⚡☆𝙹𝙰𝚈𝙳𝙴𝙽☆⚡𖥘
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❷ || https://whatsapp.com/channel/0029Vac8SosLY6d7CAFndv3Z
+❷ || https://whatsapp.com/channel/0029VarDt9t30LKL1SoYXy26
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❸ || Owner = https://wa.me/263780166288
+❸ || Owner = https://wa.me/254107065646
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❺ || Bot Repo = https://github.com/kingmalvn/RAVENS-MD
+❺ || Bot Repo = https://github.com/Jaydendev112/SIGMA-md.git
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❻ || YouTube = https://www.youtube.com/@MalvinKing_TECH 
+❻ || Bot = SIGMA-MD
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-©2024-2099 ᴍᴀʟᴠɪɴ-ᴋɪɴɢ_`
+©2025_JAYDEN TECH INFO_`
 	 await Qr_Code_By_Malvin_King.sendMessage(Qr_Code_By_Malvin_King.user.id,{text:MALVIN_KING_TEXT},{quoted:session})
 
 
