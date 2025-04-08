@@ -2,93 +2,274 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title> JAYDEN_TECH </title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content=" PAIR CODE">
+  <meta property="og:description" content="Pair-code linker for WhatsApp bot.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/darkdev-tech/Queen-md">
+  <meta property="og:image" content="https://files.catbox.moe/qz77hs.m4a">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content=" PAIR CODE">
+  <meta name="twitter:description" content="Pair-code linker for  WhatsApp bot.">
+  <meta name="twitter:image" content="https://files.catbox.moe/qz77hs.m4a">
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
-body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    body {
+      background-image: url("https://i.ibb.co/pBfJZJth/1743837507587.jpg");
       height: 100vh;
       margin: 0;
-      background-image: url("https://telegra.ph/file/dc73e16b9988c7c56b56f.jpg"); /* Set the background image */
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      font-family: Arial, sans-serif;
-    } 
-
-    .btn {
-      --color: #e5f5f1;
-      --color2: rgb(0, 0, 0);
-      width: 200px;
-      padding: 0.8em 1.75em;
-      background-color: black;
-      border-radius: 6px;
-      border: .3px solid var(--color);
-      transition: .5s;
-      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       overflow: hidden;
-      cursor: pointer;
-      z-index: 1;
-      font-weight: 300;
-      font-size: 17px;
-      font-family: 'Roboto', 'Segoe UI', sans-serif;
-      text-transform: uppercase;
-      color: var(--color);
-      margin-bottom: 24px;
+      color: white;
+      font-family: 'Graduate', sans-serif;
     }
 
-    .btn::after, .btn::before {
-      content: '';
-      display: block;
-      height: 100%;
-      width: 100%;
-      transform: skew(90deg) translate(-50%, -50%);
+    @keyframes snow {
+      0% { transform: translateY(0px); opacity: 1; }
+      100% { transform: translateY(100vh); opacity: 0; }
+    }
+
+    .snowflake {
       position: absolute;
-      inset: 50%;
-      left: 25%;
-      z-index: -1;
-      transition: .5s ease-out;
-      background-color: var(--color);
+      top: -10px;
+      width: 10px;
+      height: 10px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: snow linear infinite;
     }
 
-    .btn::before {
-      top: -50%;
-      left: -25%;
-      transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+    .snowflake:nth-child(1) { left: 10%; animation-duration: 8s; animation-delay: 0s; }
+    .snowflake:nth-child(2) { left: 20%; animation-duration: 5s; animation-delay: 1s; }
+    .snowflake:nth-child(3) { left: 30%; animation-duration: 6s; animation-delay: 2s; }
+    .snowflake:nth-child(4) { left: 40%; animation-duration: 7s; animation-delay: 3s; }
+    .snowflake:nth-child(5) { left: 50%; animation-duration: 9s; animation-delay: 4s; }
+    .snowflake:nth-child(6) { left: 60%; animation-duration: 5s; animation-delay: 2s; }
+    .snowflake:nth-child(7) { left: 70%; animation-duration: 6s; animation-delay: 1s; }
+    .snowflake:nth-child(8) { left: 80%; animation-duration: 8s; animation-delay: 0s; }
+    .snowflake:nth-child(9) { left: 90%; animation-duration: 7s; animation-delay: 3s; }
+    .snowflake:nth-child(10) { left: 95%; animation-duration: 6s; animation-delay: 4s; }
+
+    .container {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      max-width: 400px;
+      width: 100%;
     }
 
-    .btn:hover::before {
-      transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+    h3 {
+      margin-top: 0;
+      opacity: 0;
+      transform: translateY(-100px);
+      animation: slideIn 2s ease-out forwards, fadeIn 2s ease-out forwards;
     }
 
-    .btn:hover::after {
-      transform: skew(45deg) translate(-50%, -50%);
+    @keyframes slideIn {
+      to {
+        transform: translateY(0);
+      }
     }
 
-    .btn:hover {
-      color: var(--color2);
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
     }
 
-    .btn:active {
-      filter: brightness(.7);
-      transform: scale(.98);
+    .input-container {
+      display: flex;
+      background: blue;
+      border-radius: 1rem;
+      padding: 0.3rem;
+      gap: 0.3rem;
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .input-container input {
+      border-radius: 0.8rem 0 0 0.8rem;
+      background: #000000;
+      width: 89%;
+      flex-basis: 75%;
+      padding: 1rem;
+      border: none;
+      border-left: 2px solid #075e54;
+      color: #ecf0f1;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .input-container input:focus {
+      border-left: 2px solid #075e54;
+      outline: none;
+      box-shadow: inset 13px 13px 10px #075e54, inset -13px -13px 10px #2c3e50;
+    }
+
+    .input-container button {
+      flex-basis: 25%;
+      padding: 1rem;
+      background: #25d366;
+      font-weight: 900;
+      letter-spacing: 0.3rem;
+      text-transform: uppercase;
+      color: white;
+      border: none;
+      width: 100%;
+      border-radius: 0 1rem 1rem 0;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .input-container button:hover {
+      background: green;
+    }
+
+    #loading-spinner {
+      display: none;
+      color: white;
+      margin-top: 10px;
+    }
+
+    .fa-spinner {
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    #music-player {
+        position: fixed;
+        bottom: 50px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #music-player audio {
+        width: 80%;
+        max-width: 400px;
     }
   </style>
 </head>
 <body>
-<body><marquee style="color:blue;background-color:royal;height:75px;">
- 
-  Hello 👋 welcome to Jayden tech web site 🍀</marquee>
-  <button onclick="window.open(`/qr`)" class="btn">qr code</button>
-  <button onclick="window.open(`/pair`)" class="btn">pair code</button>
-  <button onclick="window.open(`https://dashboard.heroku.com/new?template=https://github.com/Jaydendev112/SIGMA-md`)" class="btn">Deploy</button>
-  <button onclick="window.open('https://github.com/Jaydendev112/SIGMA-md.git')" class="btn">Bot Repo</button>
-  <button onclick="window.open(`https://wa.me/254107065646`)" class="btn">Developer 1</button>
-  <button onclick="window.open(`https://wa.me/254107065646`)" class="btn">Developer 2</button>
-  <button onclick="window.open(`https://wa.me/254107065646`)" class="btn">Developer 3</button>
+  <div class="snowflake"></div>
+  <div class="snowflake"></div>
+  <div class="snowflake"></div>
+  <div class="snowflake"></div>
+  <div class="snowflake"></div>
+  <div class="snowflake"></div>
+  <div class="snowflake"></div>
+  <div class="snowflake"></div>
+  <div class="snowflake"></div>
+  <div class="snowflake"></div>
 
+  <div class="container">
+      
+    <h3>😈 𝑸𝑼𝑬𝑬𝑵 𝑷𝑨𝑰𝑹𝑰𝑵𝑮 😈</h3>
+    
+    <br>
+    <h3> 🕯️𝐑𝐄𝐆𝐀𝐑𝐃𝐒 𝑫𝑨𝑹𝑲 𝑻𝑬𝑪𝑯🕯️</h3>
+    
+    <p>Enter Your WhatsApp Number with Country Code.</p>
+    <br>
+    <div class="input-container">
+      <input placeholder="254xxxxxx" type="number" id="number" name="">
+      <button id="submit">Code</button>
+    </div>
+    <div id="loading-spinner">
+      <i class="fas fa-spinner fa-spin"></i>
+    </div>
+    <br>
+    <main id="pair"></main>
+  </div>
+
+  <footer>
+    DARKDEV &copy <span id="currentYear"></span>
+  </footer>
+
+  <div id="music-player">
+      <audio controls autoplay loop>
+          <source src="https://files.catbox.moe/qz77hs.m4a" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
+  <script>
+    let a = document.getElementById("pair");
+    let b = document.getElementById("submit");
+    let c = document.getElementById("number");
+
+    async function Copy() {
+      let text = document.getElementById("copy").innerText;
+      let obj = document.getElementById("copy");
+      await navigator.clipboard.writeText(obj.innerText.replace('CODE: ', ''));
+      obj.innerText = "✔️ COPIED";
+      obj.style = "color:red;font-weight:bold";
+      obj.size = "5";
+      setTimeout(() => {
+        obj.innerText = text;
+        obj.style = "color:white;font-weight-bold";
+        obj.size = "5";
+      }, 500);
+    }
+
+    b.addEventListener("click", async (e) => {
+      e.preventDefault();
+      if (!c.value) {
+        a.innerHTML = '<a style="color:red;font-weight:bold">❗ Enter your WhatsApp number with country code.</a><br><br>';
+      } else if (c.value.replace(/[^0-9]/g, "").length < 11) {
+        a.innerHTML = '<a style="color:red;font-weight:bold">❗ Invalid number format. Please try again.</a><br><br>';
+      } else {
+        const bc = c.value.replace(/[^0-9]/g, "");
+        let bb = "";
+        let bbc = "";
+        const cc = bc.split('');
+        cc.map(a => {
+          bbc += a;
+          if (bbc.length == 3) {
+            bb += " " + a;
+          } else if (bbc.length == 8) {
+            bb += " " + a;
+          } else {
+            bb += a;
+          }
+        });
+        c.type = "text";
+        c.value = "+" + bb;
+        c.style = "color:white;font-size:20px";
+        document.getElementById("loading-spinner").style.display = "block";
+        a.innerHTML = '';
+        let { data } = await axios(`/code?number=${bc}`);
+        let code = data.code || "❗ Service Unavailable";
+        a.innerHTML = '<font id="copy" onclick="Copy()" style="color:red;font-weight:bold" size="5">CODE: <span style="color:white;font-weight:bold">' + code + '</span></font><br><br><br>';
+        document.getElementById("loading-spinner").style.display = "none";
+      }
+    });
+
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
