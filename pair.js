@@ -62,17 +62,16 @@ router.get('/', async (req, res) => {
 ┃CONNECTED ✅🔥
 ┗━━━━━━━━━━━━━━━
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❶ || Creator = 𖥘⚡☆𝙹𝙰𝚈𝙳𝙴𝙽☆⚡𖥘
+❶ || Creator = 𖥘⚡☆DARK TECH☆⚡𖥘
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 ❷ || https://whatsapp.com/channel/0029VarDt9t30LKL1SoYXy26
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 ❸ || Owner = https://wa.me/254107065646
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❺ || Bot Repo = https://github.com/Jaydendev112/SIGMA-md.git
+❺ ||  Bot = QUEEN MD
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬ 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❻ || Bot = SIGMA-MD
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-©2025_JAYDEN TECH INFO_`
+©2025_DARK TECH INFO_`
  await Pair_Code_By_Malvin_King.sendMessage(Pair_Code_By_Malvin_King.user.id,{text:MALVIN_KING_TEXT},{quoted:session})
  
 
